@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Style 1 - Playful & Colorful</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@400;700;900&display=swap');
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Nunito', sans-serif;
+    background: linear-gradient(135deg, #FF6B9D 0%, #FFB347 50%, #FFE66D 100%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+  .card {
+    background: white;
+    border-radius: 32px;
+    padding: 40px;
+    max-width: 560px;
+    width: 100%;
+    box-shadow: 0 20px 60px rgba(0,0,0,0.15);
+  }
+  .badge {
+    background: linear-gradient(135deg, #FF6B9D, #FFB347);
+    color: white;
+    font-size: 12px;
+    font-weight: 900;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 6px 16px;
+    border-radius: 999px;
+    display: inline-block;
+    margin-bottom: 20px;
+  }
+  h1 {
+    font-size: 26px;
+    font-weight: 900;
+    color: #2D2D2D;
+    margin-bottom: 28px;
+    line-height: 1.3;
+  }
+  .options { display: flex; flex-direction: column; gap: 12px; }
+  .option {
+    border: 3px solid #F0F0F0;
+    border-radius: 20px;
+    padding: 16px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    font-weight: 700;
+    color: #2D2D2D;
+    transition: all 0.2s;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+  }
+  .option:hover { border-color: #FF6B9D; background: #FFF0F5; transform: scale(1.02); }
+  .option.selected { border-color: #FF6B9D; background: linear-gradient(135deg, #FF6B9D22, #FFB34722); }
+  .emoji { font-size: 24px; }
+  .progress {
+    display: flex;
+    gap: 8px;
+    margin-bottom: 28px;
+  }
+  .dot {
+    width: 10px; height: 10px;
+    border-radius: 50%;
+    background: #F0F0F0;
+  }
+  .dot.active { background: #FF6B9D; }
+  .dot.done { background: #FFB347; }
+  .label { font-size: 13px; color: #999; font-weight: 700; margin-bottom: 8px; }
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="label">STYLE 1 — PLAYFUL & COLORFUL</div>
+  <div class="progress">
+    <div class="dot done"></div>
+    <div class="dot done"></div>
+    <div class="dot active"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+    <div class="dot"></div>
+  </div>
+  <div class="badge">Question 3 of 6</div>
+  <h1>It's Saturday morning. What's your perfect start? ☀️</h1>
+  <div class="options">
+    <div class="option selected"><span class="emoji">🏔️</span> Early hike before anyone else wakes up</div>
+    <div class="option"><span class="emoji">📚</span> Reading in bed with something warm</div>
+    <div class="option"><span class="emoji">🥐</span> Brunch with friends, the longer the better</div>
+    <div class="option"><span class="emoji">🎨</span> A slow morning doing something creative</div>
+    <div class="option"><span class="emoji">✅</span> Getting things done — errands, tasks, inbox zero</div>
+  </div>
+</div>
+</body>
+</html>

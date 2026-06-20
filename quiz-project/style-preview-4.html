@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Style 4 - Warm & Cozy</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;600;700&family=Source+Sans+3:wght@400;500;600&display=swap');
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Source Sans 3', sans-serif;
+    background: linear-gradient(160deg, #F5ECD7 0%, #E8D5B7 100%);
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+  .card {
+    background: #FFFDF7;
+    border-radius: 20px;
+    padding: 44px;
+    max-width: 560px;
+    width: 100%;
+    box-shadow: 0 8px 40px rgba(120, 80, 30, 0.12);
+    border: 1px solid #E8D5B7;
+  }
+  .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  .brand {
+    font-family: 'Lora', serif;
+    font-size: 16px;
+    font-weight: 700;
+    color: #7B4F2E;
+  }
+  .counter { font-size: 13px; color: #B08860; }
+  .progress-bar {
+    height: 4px;
+    background: #EFE0C4;
+    border-radius: 4px;
+    margin-bottom: 36px;
+  }
+  .progress-fill {
+    height: 100%;
+    width: 42%;
+    background: linear-gradient(90deg, #C8874A, #E0A870);
+    border-radius: 4px;
+  }
+  h1 {
+    font-family: 'Lora', serif;
+    font-size: 22px;
+    font-weight: 600;
+    color: #3D2B1A;
+    margin-bottom: 28px;
+    line-height: 1.5;
+  }
+  .options { display: flex; flex-direction: column; gap: 10px; }
+  .option {
+    border: 2px solid #EFE0C4;
+    border-radius: 12px;
+    padding: 15px 20px;
+    cursor: pointer;
+    font-size: 15px;
+    font-weight: 500;
+    color: #5C3D24;
+    transition: all 0.2s;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    background: white;
+  }
+  .option:hover { border-color: #C8874A; background: #FFF8F0; }
+  .option.selected { border-color: #C8874A; background: linear-gradient(135deg, #FFF3E5, #FFF8F0); }
+  .dot {
+    width: 18px; height: 18px;
+    border-radius: 50%;
+    border: 2px solid #D4B896;
+    flex-shrink: 0;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .option.selected .dot {
+    border-color: #C8874A;
+    background: #C8874A;
+  }
+  .option.selected .dot::after {
+    content: '';
+    width: 6px; height: 6px;
+    background: white;
+    border-radius: 50%;
+  }
+  .label { font-size: 11px; color: #B08860; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 10px; }
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="label">STYLE 4 — WARM & COZY</div>
+  <div class="top">
+    <div class="brand">Basecamp Coffee</div>
+    <div class="counter">3 of 6</div>
+  </div>
+  <div class="progress-bar"><div class="progress-fill"></div></div>
+  <h1>It's Saturday morning. What's your perfect start?</h1>
+  <div class="options">
+    <div class="option selected">
+      <div class="dot"></div>
+      Early hike before anyone else wakes up
+    </div>
+    <div class="option">
+      <div class="dot"></div>
+      Reading in bed with something warm
+    </div>
+    <div class="option">
+      <div class="dot"></div>
+      Brunch with friends, the longer the better
+    </div>
+    <div class="option">
+      <div class="dot"></div>
+      A slow morning doing something creative
+    </div>
+    <div class="option">
+      <div class="dot"></div>
+      Getting things done — errands, tasks, inbox zero
+    </div>
+  </div>
+</div>
+</body>
+</html>

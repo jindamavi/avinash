@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Style 2 - Minimal & Clean</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&display=swap');
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'Inter', sans-serif;
+    background: #FAFAF8;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+  .card {
+    background: white;
+    border: 1px solid #E8E8E4;
+    border-radius: 8px;
+    padding: 48px;
+    max-width: 560px;
+    width: 100%;
+  }
+  .meta {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+  .brand { font-size: 13px; font-weight: 600; letter-spacing: 3px; text-transform: uppercase; color: #999; }
+  .counter { font-size: 13px; color: #999; }
+  .progress-bar {
+    height: 2px;
+    background: #F0F0F0;
+    border-radius: 2px;
+    margin-bottom: 40px;
+  }
+  .progress-fill {
+    height: 100%;
+    width: 42%;
+    background: #1A1A1A;
+    border-radius: 2px;
+  }
+  h1 {
+    font-size: 22px;
+    font-weight: 500;
+    color: #1A1A1A;
+    margin-bottom: 32px;
+    line-height: 1.5;
+    letter-spacing: -0.3px;
+  }
+  .options { display: flex; flex-direction: column; gap: 10px; }
+  .option {
+    border: 1px solid #E8E8E4;
+    border-radius: 4px;
+    padding: 16px 20px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 400;
+    color: #1A1A1A;
+    transition: all 0.15s;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
+  .option:hover { border-color: #1A1A1A; }
+  .option.selected { border-color: #1A1A1A; background: #F8F8F6; }
+  .radio {
+    width: 16px; height: 16px;
+    border: 1.5px solid #C0C0C0;
+    border-radius: 50%;
+    flex-shrink: 0;
+    display: flex; align-items: center; justify-content: center;
+  }
+  .option.selected .radio {
+    border-color: #1A1A1A;
+    background: #1A1A1A;
+  }
+  .option.selected .radio::after {
+    content: '';
+    width: 6px; height: 6px;
+    background: white;
+    border-radius: 50%;
+  }
+  .label { font-size: 11px; color: #aaa; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 8px; }
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="label">STYLE 2 — MINIMAL & CLEAN</div>
+  <div class="meta">
+    <div class="brand">Basecamp Coffee</div>
+    <div class="counter">3 / 6</div>
+  </div>
+  <div class="progress-bar"><div class="progress-fill"></div></div>
+  <h1>It's Saturday morning. What's your perfect start?</h1>
+  <div class="options">
+    <div class="option selected">
+      <div class="radio"></div>
+      Early hike before anyone else wakes up
+    </div>
+    <div class="option">
+      <div class="radio"></div>
+      Reading in bed with something warm
+    </div>
+    <div class="option">
+      <div class="radio"></div>
+      Brunch with friends, the longer the better
+    </div>
+    <div class="option">
+      <div class="radio"></div>
+      A slow morning doing something creative
+    </div>
+    <div class="option">
+      <div class="radio"></div>
+      Getting things done — errands, tasks, inbox zero
+    </div>
+  </div>
+</div>
+</body>
+</html>

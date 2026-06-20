@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Style 3 - Bold & Dramatic</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=DM+Sans:wght@400;500;600&display=swap');
+  * { box-sizing: border-box; margin: 0; padding: 0; }
+  body {
+    font-family: 'DM Sans', sans-serif;
+    background: #0D0D0D;
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+  }
+  .card {
+    background: #161616;
+    border: 1px solid #2A2A2A;
+    border-radius: 12px;
+    padding: 44px;
+    max-width: 560px;
+    width: 100%;
+  }
+  .top {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 36px;
+  }
+  .brand {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 20px;
+    letter-spacing: 3px;
+    color: #C8A96E;
+  }
+  .counter {
+    font-size: 12px;
+    color: #555;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  }
+  .progress-bar {
+    height: 3px;
+    background: #2A2A2A;
+    border-radius: 2px;
+    margin-bottom: 40px;
+  }
+  .progress-fill {
+    height: 100%;
+    width: 42%;
+    background: #C8A96E;
+    border-radius: 2px;
+  }
+  h1 {
+    font-family: 'Bebas Neue', cursive;
+    font-size: 36px;
+    color: white;
+    margin-bottom: 32px;
+    line-height: 1.1;
+    letter-spacing: 1px;
+  }
+  .options { display: flex; flex-direction: column; gap: 10px; }
+  .option {
+    border: 1px solid #2A2A2A;
+    border-radius: 8px;
+    padding: 16px 20px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 500;
+    color: #AAA;
+    transition: all 0.2s;
+    display: flex;
+    align-items: center;
+    gap: 14px;
+  }
+  .option:hover { border-color: #C8A96E; color: white; }
+  .option.selected { border-color: #C8A96E; background: #C8A96E11; color: white; }
+  .bullet {
+    width: 8px; height: 8px;
+    border-radius: 50%;
+    background: #333;
+    flex-shrink: 0;
+  }
+  .option.selected .bullet { background: #C8A96E; }
+  .label { font-size: 11px; color: #444; font-weight: 600; letter-spacing: 2px; text-transform: uppercase; margin-bottom: 10px; }
+</style>
+</head>
+<body>
+<div class="card">
+  <div class="label">STYLE 3 — BOLD & DRAMATIC</div>
+  <div class="top">
+    <div class="brand">Basecamp Coffee</div>
+    <div class="counter">Question 3 of 6</div>
+  </div>
+  <div class="progress-bar"><div class="progress-fill"></div></div>
+  <h1>It's Saturday morning. What's your perfect start?</h1>
+  <div class="options">
+    <div class="option selected"><div class="bullet"></div> Early hike before anyone else wakes up</div>
+    <div class="option"><div class="bullet"></div> Reading in bed with something warm</div>
+    <div class="option"><div class="bullet"></div> Brunch with friends, the longer the better</div>
+    <div class="option"><div class="bullet"></div> A slow morning doing something creative</div>
+    <div class="option"><div class="bullet"></div> Getting things done — errands, tasks, inbox zero</div>
+  </div>
+</div>
+</body>
+</html>
